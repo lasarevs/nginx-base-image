@@ -11,9 +11,7 @@ RUN apt-get update \
 
 RUN apt-get install -my wget gnupg \
     && curl -sL https://deb.nodesource.com/setup_8.x | bash - \
-    && apt-get install -y nodejs \
-    && npm install -g bower \
-    && npm install -g gulp
+    && apt-get install -y nodejs
 
 EXPOSE 80 443
 
